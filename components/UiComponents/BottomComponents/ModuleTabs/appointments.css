@@ -1,0 +1,40 @@
+.appnt-btn {
+  padding: 0.5em 1.5em;
+  background-color: #f3f3f3;
+  border-radius: 624.9375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  min-width: fit-content;
+}
+
+.appnt-btn-unselected {
+  padding: 0.5em 1.5em;
+  border: 0.125rem solid #dfdbd8;
+  border-radius: 624.9375rem;
+  font-size: 1rem;
+  font-weight: 400;
+  min-width: fit-content;
+}
+
+.appnt-label {
+  font-size: 0.875rem;
+  padding: 0.5em 0.75em;
+  border: 0.0625rem solid #dfdbd8;
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+.appt-box {
+  width: 98%;
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--Neutrals-Neutrals-6, #FAFAFA);
+  background: var(--Shades-White, #FFF);
+  box-shadow: 0px 2px 12px 1px rgba(171, 181, 217, 0.12);
+}
+
+@media only screen and (max-width: 40rem) {
+  .appt-box {
+    padding: 1rem 0.75rem 0.75rem 0.75rem;
+  }
+}

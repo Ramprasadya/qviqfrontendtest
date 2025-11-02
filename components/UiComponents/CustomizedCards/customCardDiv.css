@@ -1,0 +1,103 @@
+.customCardDiv {
+    transform: scale(120%);
+    transition: 200ms;
+
+    background: white;
+    /* outline: 2px dashed rgb(255, 153, 0); */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.customCardDiv2 {
+    transform: scale(120%);
+    transition: 200ms;
+
+    background: white;
+    /* outline: 2px dashed rgb(255, 153, 0); */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+    .customCardDiv {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .customCardDiv2 {
+        transform: scale(100%);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .customCardDiv {
+        transform: scale(85%);
+    }
+    .customCardDiv2 {
+        transform: scale(85%);
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .customCardDiv {
+        transform: scale(75%);
+    }
+    .customCardDiv2 {
+        transform: scale(75%);
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .customCardDiv {
+        transform: scale(70%);
+    }
+    .customCardDiv2 {
+        transform: scale(65%);
+    }
+}
+
+/* *************** */
+
+.cardFront {
+    object-fit: contain;
+    user-select: none;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    object-fit: contain;
+    z-index: 3;
+}
+
+.content {
+    z-index: 2;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* outline: 1px dashed rgb(150, 150, 150); */
+}
+
+.name {
+    /* outline: 1px dashed rgb(150, 150, 150); */
+    width: fit-content;
+}
+
+.designation {
+    /* outline: 1px dashed rgb(150, 150, 150); */
+    width: fit-content;
+}

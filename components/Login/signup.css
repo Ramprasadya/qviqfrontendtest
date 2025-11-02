@@ -1,0 +1,16 @@
+.blackInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #0a0003;
+  opacity: 1;
+  /* Firefox */
+}
+
+.blackInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #0a0003;
+}
+
+.blackInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #0a0003;
+}

@@ -1,0 +1,100 @@
+.floating-div {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(215, 215, 215);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.185);
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cover {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: rgb(213, 213, 213);
+    outline: 2px dashed rgb(255, 153, 0);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardFront {
+    object-fit: contain;
+    user-select: none;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    object-fit: contain;
+    z-index: 3;
+}
+
+.content {
+    z-index: 2;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: 1px dashed rgb(150, 150, 150);
+}
+
+.name {
+    outline: 1px dashed rgb(150, 150, 150);
+    width: fit-content;
+}
+
+.designation {
+    outline: 1px dashed rgb(150, 150, 150);
+    width: fit-content;
+}
+
+
+/* --------------- */
+
+
+.recenter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    background: rgb(126, 190, 255);
+    font-weight: 600;
+    padding: 10px;
+    font-size: 16px;
+    transition: 200ms;
+    color: rgb(40, 40, 40);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.356);
+}
+
+.recenter:active {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.356);
+    font-size: 14px;
+    height: 45px;
+    width: 95px;
+}

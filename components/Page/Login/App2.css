@@ -1,0 +1,126 @@
+
+       form {
+          padding: 16px;
+          max-width: 800px;
+          margin-top: 5%;
+          margin-left: 20%;
+          border: 1px solid;
+        
+       }
+       .bottomemail{
+         margin: 0 12px 12px 12px;
+         align-items: center;
+         
+       }
+       
+       hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+       }
+       .registerbtn {
+          background-color: #340df5;
+          color: white;
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+       }
+       .registerbtn:hover {
+          opacity: 1.5;
+          background-color: rgb(253, 249, 12);
+       }
+       .registerbtn:disabled {
+        background-color: rgb(253, 12, 241);
+      }
+       a {
+          color: dodgerblue;
+          text-decoration: none;
+       }
+       .signin {
+          background-color: #f1f1f1;
+          text-align: center;
+       }
+       .pre{
+         margin-left: 60px ;
+         
+         /* justify-items: center; */
+       }
+       .checkbox-container {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          
+          .checkbox {
+            appearance: none;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            margin-right: 8px;
+            position: relative;
+            top: 3px;
+            transition: all 0.3s ease-in-out;
+          }
+          
+          .checkbox:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+          }
+          
+          .checkbox:checked::before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background-color: #fff;
+          }
+          
+          .checkbox-label {
+            font-size: 14px;
+            vertical-align: middle;
+          }
+.preview{
+   float: right;
+   border: 1px solid ;
+   margin: 2px 15px 25px 5px;
+   width: 360px;
+   height: 283px;
+   border-radius: 8px;
+   padding: 5px 3px 5px 6px;
+}          
+.image-div{
+   padding: 5px;
+}
+.qr-img{
+   width: 150px;
+   height: 200px;
+   margin: 5px;
+}
+.qr-image{
+   width: 20px;
+   height: 20px;
+   
+}
+.preview{
+   padding: 60px;
+}
+.previe-img{
+   width: 200px;
+   height: 150px;
+   
+   
+}
+
+       @media (max-width: 800px) {
+          form {
+             width: 100%;
+             margin-left: 0px;
+          }
+       }

@@ -1,0 +1,30 @@
+.meeting-card {
+    width: 540px;
+    /* column-count: 3;
+    --webkit-column-count: 3;
+    --moz-column-count: 3; */
+}
+
+@media (max-width: 2028px) {
+    .meeting-card {
+        width: 450px;
+    }
+}
+@media (max-width: 1620px) {
+    .meeting-card {
+        width: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .meeting-card {
+        width: 335px;
+    }
+}
+@media (max-width: 720px) {
+    .meeting-card {
+        width: 100%;
+        /* column-count: 1;
+    --webkit-column-count: 1;
+    --moz-column-count: 1; */
+    }
+}

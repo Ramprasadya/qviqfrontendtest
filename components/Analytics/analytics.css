@@ -1,0 +1,75 @@
+.analystics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 267px);
+  overflow-x: scroll;
+}
+
+.analytics-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 97px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 20px rgba(216, 216, 216, 0.12);
+  border-radius: 8px;
+}
+
+.analytics-card-para {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.dropdown-div {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 64px;
+}
+
+.analytic-wrapper {
+  background-color: white;
+  padding: 2.5rem 2.75rem 2rem 2.75rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 20px rgba(216, 216, 216, 0.12);
+  margin-bottom: 1.5rem;
+}
+
+.analytic-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+@media (min-width:768px) and (max-width:850px) {
+  .analytic-wrapper{
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .analystics-grid {
+    grid-template-columns: repeat(2, 48%);
+  }
+  .analytics-card {
+    width: 100%;
+  }
+  .analytic-heading{
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width:568px) {
+  .analytic-wrapper{
+    padding: 20px;
+  }
+  .analytic-heading {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:350px) {
+  .analystics-grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+}

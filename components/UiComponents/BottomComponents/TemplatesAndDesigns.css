@@ -1,0 +1,162 @@
+.template-grid {
+  display: grid;
+}
+.appearance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.filled_btn_0 {
+  background-color: #1a1a1a;
+  width: 186px;
+  height: 40px;
+}
+
+.filled_btn_12 {
+  background-color: #1a1a1a;
+  width: 186px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.filled_btn_64 {
+  background-color: #1a1a1a;
+  width: 186px;
+  height: 40px;
+  border-radius: 64px;
+}
+
+.outline_btn_0 {
+  border: 1px solid black;
+  width: 186px;
+  height: 40px;
+}
+
+.outline_btn_12 {
+  border: 1px solid black;
+  width: 186px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.outline_btn_64 {
+  border: 1px solid black;
+  width: 186px;
+  height: 40px;
+  border-radius: 64px;
+}
+
+.soft_btn_0 {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+  width: 186px;
+  height: 40px;
+}
+
+.soft_btn_12 {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+  width: 186px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.soft_btn_64 {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.16);
+  width: 186px;
+  height: 40px;
+  border-radius: 64px;
+}
+
+.hard_btn_0 {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px #000000;
+  width: 186px;
+  height: 40px;
+}
+
+.hard_btn_12 {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px #000000;
+  width: 186px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.hard_btn_64 {
+  border: 1px solid black;
+  box-shadow: 2px 2px 0px 2px #000000;
+  width: 186px;
+  height: 40px;
+  border-radius: 64px;
+}
+
+.dropDown_popup {
+  position: absolute;
+  left: 16px;
+  top: 80px;
+  background-color: #ffffff;
+  width: 256px;
+  padding: 1.5rem;
+  box-shadow: 0.5rem 0.5rem 2.5rem 0.0625rem rgba(171, 181, 217, 0.32);
+}
+
+.dropDown_label {
+  display: flex;
+  gap: 20px;
+}
+
+.dropDown_popup_item {
+  padding: 0.8125rem;
+  /* border-radius: 0.5rem; */
+}
+.dropDown_popup_item:hover {
+  cursor: pointer;
+  background: #f3f3f3;
+  font-weight: 500;
+}
+
+@media (min-width: 1280px) and (max-width: 1420px) {
+  .appearance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .appearance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .appearance-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 340px) and (max-width: 768px) {
+  .appearance-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 340px) {
+  .appearance-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .filled_btn_0,
+  .filled_btn_12,
+  .filled_btn_64,
+  .outline_btn_0,
+  .outline_btn_12,
+  .outline_btn_64,
+  .soft_btn_0,
+  .soft_btn_12,
+  .soft_btn_64,
+  .hard_btn_0,
+  .hard_btn_12,
+  .hard_btn_64 {
+    width: 128px;
+  }
+}

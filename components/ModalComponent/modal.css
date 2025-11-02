@@ -1,0 +1,33 @@
+.modal-wrapper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(26, 26, 26, 0.52);
+  overflow: hidden;
+}
+
+.modal-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  height: fit-content;
+  max-height: 80vh;
+}
+
+@media (max-width:768px) {
+  .modal-container {
+    transform: translate(0);
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    left: 0;
+    height: 80vh;
+    border-radius: 16px 16px 0 0;
+  }
+}

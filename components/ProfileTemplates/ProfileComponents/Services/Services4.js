@@ -1,0 +1,172 @@
+import React, { useRef } from "react";
+import LeftRightScrollBtn from "../../../Utils/LeftRightScrollBtn";
+import Button from "../Button/Button";
+import CustomButton from "../Button/CustomButton";
+import axios from "axios";
+import { serverUrl } from "@/config";
+
+const Services4 = (props) => {
+  const serviceRef = useRef(null);
+  const data = props.data;
+  const scrollBtn = props.scrollBtn;
+  const style = props.style;
+  const handleOnClick = (link, name, customLink) => {
+    if (customLink) {
+      window.open(customLink, "_blank");
+    } else if (link) {
+      const message = `Hello! I'm intrested in your ${name} product displayed on qviq`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappLink = `https://api.whatsapp.com/send?phone=${link}&text=${encodedMessage}`;
+      window.open(whatsappLink, "_blank");
+    }
+  };
+
+  const updateAnalytics = async (ServiceName) => {
+    if (props.templateId !== undefined && props.username !== undefined) {
+      if (props.templateId !== "" && props.username !== "") {
+        const ipResponse = await axios.get("https://ipapi.co/json/");
+        const ipData = ipResponse.data;
+        await axios.post(
+          `${serverUrl}/analytics/${props.templateId}/${props.username}/${ServiceName}`,
+          {
+            profile: props.username,
+            country: ipData.country_name,
+            countryCode: ipData.country_code,
+            analyticsType:"service"
+          }
+        );
+      }
+    }
+  };
+
+  return (
+    <div className="w-full">
+      {props.heading}
+      <div className="relative">
+        <div className="overflow-scroll" ref={serviceRef}>
+          <div className="flex flex-row gap-5">
+            {data.map((item, index) => {
+              return (
+                <div
+                  className={`${style.card}`}
+                  style={{
+                    borderTop: " 4px solid rgba(255, 255, 255, 0.64)",
+                    borderLeft: " 2px solid rgba(255, 255, 255, 0.4)",
+                    borderRight: " 2px solid rgba(255, 255, 255, 0.4)"
+                    // background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.64), transparent)'
+                  }}
+                  key={index}
+                  >
+                  {/* <div className="relative bg-[#272727] z-[0] min-w-[275px] max-w-[275px] min-h-[275px] max-h-[98%] p-6 rounded-[16px]"></div> */}
+
+                  <div className="z-[5] w-[100%]">
+                    <img
+                     onClick={() => {
+                      updateAnalytics(item.serviceName)
+                      props.setOpenServiceModal(true)
+                       props.setOpenedService({
+                         name: item.serviceName,
+                         description: item.serviceDescription,
+                         price: item.productPrice,
+                         btn: item.serviceButton,
+                         btnType: "custom",
+                         btnLabel: item.label,
+                         btnStyle: "card-btn rounded-full",
+                         customLink: item.customLink,
+                         link: item.link,
+                         id: item._id,
+                       });
+                       typeof item.image == "string"
+                         ? props.setServiceImgArr(item.image.split(" "))
+                         : props.setServiceImgArr(item.image);
+                     }}
+                      src={item.image}
+                      alt="service image"
+                      loading="lazy"
+                      className={`${style.image} cursor-pointer `}
+                    />
+                  </div>
+                  <h1 className={`${style.title} z-[5] w-[100%]`}>
+                    {item.serviceName}
+                  </h1>
+                  <h1 className={`${style.description} z-[5] w-[100%]`}>
+                    {/* {item.serviceDescription} */}
+                    <span className="cursor-default">
+                    {item.serviceDescription
+                        ? item.serviceDescription.substring(0, 65)
+                        : "No description available"}
+                    </span>{" "}
+                    <a
+                      className={`underline font-bold cursor-pointer ${ item.serviceDescription && item.serviceDescription.length > 65 ? "" : "hidden" } `}
+                      onClick={() => {
+                        updateAnalytics(item.serviceName)
+                        props.setOpenServiceModal(true)
+                         props.setOpenedService({
+                           name: item.serviceName,
+                           description: item.serviceDescription,
+                           price: item.productPrice,
+                           btn: item.serviceButton,
+                           btnType: "custom",
+                           btnLabel: item.label,
+                           btnStyle: "card-btn rounded-full",
+                           customLink: item.customLink,
+                           link: item.link,
+                           id: item._id,
+                         });
+                         typeof item.image == "string"
+                           ? props.setServiceImgArr(item.image.split(" "))
+                           : props.setServiceImgArr(item.image);
+                       }}
+                    >
+                      Read More..
+                    </a>
+                  </h1>
+                  <div
+                    className={`${item.serviceButton ? "visible" : "hidden"}`}
+                  >
+                    {props.type == "custom" ? (
+                      <CustomButton
+                        text={item.label}
+                        style={props.buttonStyle}
+                        customBtn={props.customBtn}
+                        onClick={() => {
+                          handleOnClick(
+                            item.link,
+                            item.serviceName,
+                            item.customLink
+                          );
+                        }}
+                      />
+                    ) : (
+                      <Button
+                        text={item.label}
+                        style={props.buttonStyle}
+                        onClick={() => {
+                          handleOnClick(
+                            item.link,
+                            item.serviceName,
+                            item.customLink
+                          );
+                        }}
+                      />
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <LeftRightScrollBtn
+          refrence={serviceRef}
+          scrollLength={600}
+          style={scrollBtn.style}
+          leftPosition={scrollBtn.leftPosition}
+          rightPosition={scrollBtn.rightPosition}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Services4;

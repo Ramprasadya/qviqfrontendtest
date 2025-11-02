@@ -1,0 +1,53 @@
+.productTabActive {
+  padding: 0.563em;
+  background-color: #ffffff;
+  font-weight: 500;
+  width: 50%;
+}
+.productTabNotActive {
+  padding: 0.563em;
+  width: 50%;
+}
+
+.productBackground {
+  background-color: #f3f3f3;
+  cursor: pointer;
+  width: 100%;
+}
+.not-added-para {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #817c7c;
+  text-align: center;
+}
+
+.appnt-label {
+  width: 20.0625rem;
+  border: 0.0625rem solid #dfdbd8;
+}
+.my-input {
+  border: 0.125rem solid black;
+  /* width: 100%; */
+}
+
+.switch-bg {
+  background: #ffffff;
+  border: 0.0625rem solid #f3f3f3;
+  box-shadow: 0rem 0.125rem 1rem rgba(167, 167, 167, 0.14);
+  border-radius: 0.5rem;
+}
+
+.add-div {
+  background: #f3f3f3;
+  border: 0.0625rem solid #dfdbd8;
+  border-radius: 0.75rem;
+}
+
+.add-div p {
+  color: #1a1a1a;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.whatsapp {
+  font-weight: 500;
+}

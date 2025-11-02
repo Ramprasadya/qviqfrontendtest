@@ -1,0 +1,20 @@
+.ecom-para {
+  padding: 0.5em 0 1.25em 0;
+  font-size: 14px;
+}
+
+.ecom-heading {
+  font-size: 18px;
+}
+.add-icon{
+  background: var(--primary-primary-gradient,linear-gradient(225deg, #FB6609 0%, #E40849 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:768px){
+  .ecom-heading {
+    font-size: 16px;
+  }
+}

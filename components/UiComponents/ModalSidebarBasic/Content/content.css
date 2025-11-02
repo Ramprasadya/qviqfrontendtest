@@ -1,0 +1,39 @@
+.box-model {
+  box-shadow: 0px 2px 8px rgba(171, 181, 217, 0.14);
+}
+.add-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px dashed #a7a7a7;
+  border-radius: 12px;
+  padding: .5rem;
+  min-height: 144px;
+}
+.image-text {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #817c7c;
+}
+.upload-content {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  /* padding: 8px;
+    gap: 6px; */
+}
+
+@media (max-width:768px){
+  .image-text{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:319px){
+  .add-image{
+    height: 185px;
+    padding: 1rem .5rem;
+  }
+}

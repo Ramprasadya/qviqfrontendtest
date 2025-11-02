@@ -1,0 +1,17 @@
+.qr-img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+.image-div{
+    padding: 5px;
+}
+.card-table{
+        margin: 50px 200px 50px 50px;
+        width: 49%;
+        height: 50px;
+
+        border-style: solid;
+        border-width: 1px; /* 20px top and bottom, 5px on the sides */
+      
+}

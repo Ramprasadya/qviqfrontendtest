@@ -1,0 +1,56 @@
+.dataDiv {
+    transition: 300ms;
+}
+
+.imgDiv {
+    transition: 300ms;
+}
+
+.tempImg {
+    transition: 300ms;
+}
+
+.bgShadow {
+    transition: 300ms;
+}
+
+@media screen and (max-width: 1080px) {
+    .dataDiv {
+        transform: scale(90%);
+    }
+    
+    .imgDiv {
+        margin-left: 0;
+    }
+
+    .tempImg {
+        transform: scale(90%);
+    }
+
+    .bgShadow {
+        height: 200px;
+        width: 200px;
+    }
+}
+@media screen and (max-width: 890px) {
+    .dataDiv {
+        margin-right: 10px;
+    }
+    .dataBox {
+        width: 452px;
+    }
+}
+@media screen and (max-width: 765px) {
+    .dataBox {
+        width: 406px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .dataDiv{
+        margin: 0px;
+    }
+    .dataBox {
+        width: 100%;
+        padding: 0px;
+    }
+}

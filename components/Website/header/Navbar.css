@@ -1,0 +1,31 @@
+.blinkBg {
+    height: 20px;
+    width: 20px;
+    border-radius: 500px;
+    background: #E4084933;
+}
+.blink {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    width: 20px;
+    border-radius: 500px;
+    transform: scale(100%);
+
+    background: linear-gradient(#FB6609, #E40849);
+
+    animation: anim 1s alternate infinite ease-in-out;
+}
+
+@keyframes anim {
+    from {
+        transform: scale(10%);
+    }
+
+    to {
+        transform: scale(80%);
+    }
+}

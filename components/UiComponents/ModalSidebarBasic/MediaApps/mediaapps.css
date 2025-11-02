@@ -1,0 +1,10 @@
+.social-media {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.add-icon{
+  background: var(--primary-primary-gradient,linear-gradient(225deg, #FB6609 0%, #E40849 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

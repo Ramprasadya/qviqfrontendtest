@@ -1,0 +1,317 @@
+.first_heading {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.second_heading {
+  font-family: Poppins;
+  font-size: 20px;
+  line-height: 28px;
+  color: #817c7c;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.month_container {
+  border-radius: 64px;
+  padding: 2px 4px 2px 4px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.card_container {
+  border-radius: 20px;
+  box-shadow: 4px 4px 40px 1px rgba(171, 181, 217, 0.18);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active_container {
+  border: 4px solid #817c7c;
+}
+
+.Image_text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.card_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading_div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-items: center;
+}
+
+.heading_text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #817c7c;
+}
+
+.heading _head {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #1a1a1a;
+}
+
+.heading_para {
+  width: 100%;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #817c7c;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading_para_starter {
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #817c7c;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.heading_para_pro {
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #817c7c;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.content_heading {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1a1a;
+}
+
+.content_text {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+
+.content_text>img {
+  margin-top: 5px;
+}
+
+.content_text>span {
+  margin-top: 5px;
+}
+
+.content_text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.content_allText {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Choose_plan {
+  font-family: "Plus Jakarta Sans";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 43px;
+  gap: 10px;
+  margin-top: 2px;
+  width: 260px;
+  height: 40px;
+  border-radius: 64px;
+}
+
+.Choose_plan.active {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  color: #0A0003;
+  background: #ffffff;
+  box-shadow: 0px 2px 16px rgba(167, 167, 167, 0.14);
+}
+
+.off_price {
+  font-size: 13px !important;
+  margin-top: 2px;
+}
+
+.off_price.active {
+  font-size: 11px !important;
+  margin-top: 1px;
+}
+
+.Recommended {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 20px;
+  gap: 8px;
+  width: 150px;
+  height: 38px;
+  left: 645px;
+  top: 521px;
+  background: white;
+  color: #1A1A1A;
+  box-shadow: 0px 6px 20px 0px rgba(73, 9, 5, 0.50);
+  border-radius: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: -20px;
+}
+
+.RecommendedPrice {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 8px;
+  width: 86px;
+  height: 32px;
+  left: 645px;
+  top: 521px;
+  background: white;
+  color: #1A1A1A;
+  box-shadow: 0px 6px 20px 0px rgba(73, 9, 5, 0.50);
+  border-radius: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: -15px;
+}
+
+@media (max-width: 767px) {
+
+  .Choose_plan,
+  .Choose_plan,
+  .Choose_plan {
+    width: 104px;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .Choose_plan,
+  .Choose_plan,
+  .Choose_plan {
+    width: 40px;
+  }
+
+  .Recommended {
+    height: 25px;
+    width: 130px;
+    font-size: 12px;
+    margin-top: -8px;
+    padding: 2px 20px;
+  }
+
+  .Image_text_starter,
+  .Image_text_pro,
+  .Image_text {
+    font-size: 16px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+@media (max-width: 992px) {
+  .Choose_plan {
+    width: 180px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 578px) {
+  .Choose_plan {
+    padding: 10px;
+    font-size: 14px;
+    gap: 2px;
+  }
+
+  .Choose_plan.active {
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: #0A0003;
+    background: #ffffff;
+    box-shadow: 0px 2px 16px rgba(167, 167, 167, 0.14);
+  }
+}
+
+@media (max-width: 340px) {
+  .card_container {
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .active_container {
+    border: 1px solid #817c7c;
+  }
+}
+
+
+.adCard {
+  background: linear-gradient(90deg, #6B65DA 0%, #BBACE4 55%, #FCE6ED 100%);
+  transition: 300ms;
+}
+
+@media (max-width: 450px) {
+
+  .adCard {
+    background: linear-gradient(90deg, #6B65DA 0%, #BBACE4 100%);
+  }
+}

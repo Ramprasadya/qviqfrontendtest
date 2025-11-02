@@ -1,0 +1,14 @@
+.pageBtn {
+    transition: 200ms;
+}
+
+.pageArrow {
+    transform: translateX(-10px);
+    transition: 200ms;
+}
+
+.pageBtn:hover .pageArrow {
+    transition: 200ms;
+    transform: translateX(0);
+    opacity: 1;
+}

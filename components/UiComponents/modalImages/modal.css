@@ -1,0 +1,46 @@
+
+.slick-dots {
+    display: flex !important;
+    justify-content: center !important; 
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important; 
+  }
+  
+ 
+  .slick-dots li.one {
+    margin: 0 -8px !important; 
+  }
+  .slick-dots li {
+    margin: 0 2px !important; 
+  }
+  .slick-dots li.two {
+    margin: 0 0px !important;
+  }
+  
+  
+  .slick-dots li button:before {
+    font-size: 10px !important; 
+    color: #000 !important; 
+    content: '' !important; 
+    display: inline-block !important;
+    width: 8px !important; 
+    height: 8px !important; 
+    border-radius: 50% !important; 
+    background-color: currentColor !important; 
+  }
+  
+ 
+  .slick-dots li.slick-active button:before {
+    font-size: 12px !important; 
+    color: #000; 
+    width: 16px !important; 
+    height: 8px !important; 
+    border-radius: 4px !important; 
+    background-color: currentColor !important; 
+  }
+
+  .slick-dots ul{
+    margin-left: 15px !important;
+  }
+  

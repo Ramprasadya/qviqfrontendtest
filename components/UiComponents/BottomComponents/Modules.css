@@ -1,0 +1,23 @@
+.tab-para {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.tab-div {
+  border-bottom: 0.1875rem solid black;
+}
+.tab-div:hover {
+  cursor: pointer;
+}
+.cp {
+  color: #817c7c;
+  font-weight: 200;
+}
+.cp:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 40rem) {
+  .tab-para {
+    font-size: 0.875rem;
+  }
+}
