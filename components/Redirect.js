@@ -46,7 +46,7 @@ const RedirectPage = ({ data, searchParams }) => {
       window.location.hostname.split(".").length >
       (hostname === "localhost:3000" ? 2 : 3)
     )
-      // redirect(`${clientUrl}/err`);
+      redirect(`${clientUrl}/err`);
 
     (async () => {
       // updating analytics profile view count
