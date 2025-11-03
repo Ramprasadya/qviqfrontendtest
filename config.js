@@ -15,6 +15,7 @@
 // export const hostname = "quick-test-ssr.vercel.app";
 
 //test code on ramprasad vercel  
-export const clientUrl = "https://qviqfrontendtest.vercel.app";
-export const hostname = "qviqfrontendtest.vercel.app";
+export const clientUrl = "https://qviqfrontend.onrender.com";
+export const hostname = "qviqfrontend.onrender.com";
+// export const serverUrl = "https://qviqbackend.vercel.app";
 export const serverUrl = "https://server.qviq.io";
