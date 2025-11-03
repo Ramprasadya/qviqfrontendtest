@@ -10,11 +10,11 @@ import Image from "next/image";
 
 export default function Error404() {
   const navigate = useRouter();
-  useEffect(() => {
-      window.location.host !== hostname &&
-      window.location.replace(`${clientUrl}/err`);
+  // useEffect(() => {
+  //     window.location.host !== hostname &&
+  //     window.location.replace(`${clientUrl}/err`);
     
-  }, []);
+  // }, []);
 
   return (
     <div

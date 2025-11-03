@@ -294,14 +294,14 @@ const Pricing = () => {
           }
           window.location.href = `${clientUrl}/chooseprofile/${username}`;
         } else {
-          window.location.href = `${clientUrl}/error`;
+          // window.location.href = `${clientUrl}/error`;
         }
       },
     };
 
     const paymentObject = new window.Razorpay(options);
     paymentObject.on("payment.failed", function (response) {
-      window.location.href = `${clientUrl}/error`;
+      // window.location.href = `${clientUrl}/error`;
     });
     paymentObject.open();
   }

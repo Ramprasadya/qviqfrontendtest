@@ -298,7 +298,7 @@ const getData = async (userName) => {
     }
   } catch (err) {
     if (err.error == "Locked Profile") redirect(`${clientUrl}/lockedprofile`);
-    redirect(`${clientUrl}/err`);
+    // redirect(`${clientUrl}/err`);
   }
 };
 
