@@ -1,8 +1,8 @@
 // for Production purpose
 // export const serverUrl = "https://tapop.onrender.com"; // Render
 export const serverUrl = "https://server.qviq.io"; // AWS
-export const clientUrl = "https://qviq.io";
-export const hostname = "qviq.io";
+// export const clientUrl = "https://qviq.io";
+// export const hostname = "qviq.io";
 
 // for Development purpose
 //  export const serverUrl = "http://localhost:2610";
@@ -11,5 +11,5 @@ export const hostname = "qviq.io";
 
 // for test Deployment on Vercel purpose
 // export const serverUrl = "https://server.qviq.io";
-// export const clientUrl = "https://quick-test-ssr.vercel.app";
-// export const hostname = "quick-test-ssr.vercel.app";
+export const clientUrl = "https://qviqfrontendtest.vercel.app";
+export const hostname = "qviqfrontendtest.vercel.app";
