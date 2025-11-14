@@ -63,5 +63,7 @@ export const metadata = {
 };
 
 export default function homePage() {
-  return <HomePage />;
+  return <>
+   <p>Hello vercel</p>
+  </>
 }
