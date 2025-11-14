@@ -26,7 +26,6 @@ export default function Error404() {
       <div className="min-h-[110px]">
         <Navbar background="#FFFF" />
       </div>
-
       <div className=" bg-white z-50 mx-4 flex flex-col justify-center p-[20px] md:ml-[20px] md:mt-[32px] md:mr-[20px] md:rounded-[40px] items-center lg:mx-[60px]  lg:mb-[84px] lg:pb-[80px] lg:rounded-[40px] rounded-[40px]   ">
         <div className="flex justify-center  md:mt-[80px] xl:ml-[60px] lg:mb-[39px]  xl:mr-[15px] flex-col-reverse lg:flex-row items-center">
           <div className="flex flex-col justify-center lg:ml-[25px] lg:justify-normal lg:items-start items-center  ">
