@@ -96,8 +96,8 @@ const Profile2 = (props) => {
         <div
           className="flex flex-col justify-end rounded-[20px] min-h-[643px] p-[24px] gap-[8px]"
           style={{
-            backgroundImage: props.pimage
-              ? `url("${props.pimage}")`
+            backgroundImage: props?.pimage
+              ? `url("${props?.pimage}")`
               : "url('https://picsum.photos/700')",
             backgroundSize: "cover",
             backgroundPosition: "center center",

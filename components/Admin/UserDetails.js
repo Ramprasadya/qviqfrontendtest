@@ -102,7 +102,7 @@ const getData = async (userName) => {
           obj.companyName = result.data.user[0].companyName;
           obj.description = result.data.user[0].description;
           obj.jobTitle = result.data.user[0].jobTitle;
-          obj.pimage = result.data.user[0].profileimage;
+          obj?.pimage = result.data.user[0].profileimage;
         } else {
           obj.name = data.user[0].name;
           obj.firstName = data.user[0].firstName;

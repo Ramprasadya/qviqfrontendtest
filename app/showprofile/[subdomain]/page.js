@@ -199,7 +199,7 @@ const getData = async (userName) => {
           obj.autodownload = result.data.user[0].autodownload;
           //console.log(data.user[0]);
 
-          obj.pimage = result.data.user[0].profileimage;
+          obj?.pimage = result.data.user[0].profileimage;
         } else {
           obj.name = data.user[0].name;
           obj.firstName = data.user[0].firstName;

@@ -103,7 +103,7 @@ const RedirectPage = ({ data, searchParams }) => {
         <div className="flex flex-col justify-center items-center w-screen h-screen gap-5 relative">
           <div className="relative w-28 h-28 rounded-full">
             <Image
-              src={data.pimage || require("./Image/Tapop logo black.png")}
+              src={data?.pimage || require("./Image/Tapop logo black.png")}
               alt="Tapop logo"
               className="object-cover rounded-full"
               fill
@@ -144,7 +144,7 @@ const RedirectPage = ({ data, searchParams }) => {
           mobileVisibility={data.mobileVisibility}
           jobDescription={data.description}
           companyName={data.companyName}
-          pimage={data.pimage}
+          pimage={data?.pimage}
           images={data.images}
           videos={data.videos}
           apps={data.apps}
