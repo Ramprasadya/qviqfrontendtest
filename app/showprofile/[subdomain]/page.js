@@ -29,11 +29,11 @@ export async function generateMetadata({ params }, parent) {
 
           const fullProfileImageUrl = new URL(
             profileImage,
-            `https://${params.subdomain}.qviqfrontendtest.vercel.app`
+            `https://${params.subdomain}.qviq.io`
           ).toString();
 
           return {
-            metadataBase: new URL(`https://${params.subdomain}.qviqfrontendtest.vercel.app`),
+            metadataBase: new URL(`https://${params.subdomain}.qviq.io`),
              icons: {
               icon: [
                 { url: profileImage, sizes: "any" },
@@ -199,7 +199,7 @@ const getData = async (userName) => {
           obj.autodownload = result.data.user[0].autodownload;
           //console.log(data.user[0]);
 
-          obj?.pimage = result.data.user[0].profileimage;
+          obj.pimage = result.data.user[0].profileimage;
         } else {
           obj.name = data.user[0].name;
           obj.firstName = data.user[0].firstName;
@@ -298,7 +298,7 @@ const getData = async (userName) => {
     }
   } catch (err) {
     if (err.error == "Locked Profile") redirect(`${clientUrl}/lockedprofile`);
-    // redirect(`${clientUrl}/err`);
+    redirect(`${clientUrl}/err`);
   }
 };
 

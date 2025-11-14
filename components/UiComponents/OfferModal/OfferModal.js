@@ -28,7 +28,7 @@ export default function OfferModal() {
       const hostname = window.location.hostname;
       // Check for localhost or known domain
       const isLocalhost = hostname === "localhost";
-      const isMainDomain = hostname === "qviqfrontendtest.vercel.app";
+      const isMainDomain = hostname === "qviq.io";
       const isClientDomain = hostname === "theeliteenterprise.com";
       setIsClient(isClientDomain);
       return !(isLocalhost || isMainDomain);
@@ -174,9 +174,9 @@ export default function OfferModal() {
     }
   };
 
-  // useEffect(() => {
-  //   getCoupons();
-  // }, []);
+  useEffect(() => {
+    getCoupons();
+  }, []);
 
   const [addExProduct, setaddExProduct] = useState(false);
   const incProduct = () => {

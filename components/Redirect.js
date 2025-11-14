@@ -46,7 +46,7 @@ const RedirectPage = ({ data, searchParams }) => {
       window.location.hostname.split(".").length >
       (hostname === "localhost:3000" ? 2 : 3)
     )
-      // redirect(`${clientUrl}/err`);
+      redirect(`${clientUrl}/err`);
 
     (async () => {
       // updating analytics profile view count
@@ -103,7 +103,7 @@ const RedirectPage = ({ data, searchParams }) => {
         <div className="flex flex-col justify-center items-center w-screen h-screen gap-5 relative">
           <div className="relative w-28 h-28 rounded-full">
             <Image
-              src={data?.pimage || require("./Image/Tapop logo black.png")}
+              src={data.pimage || require("./Image/Tapop logo black.png")}
               alt="Tapop logo"
               className="object-cover rounded-full"
               fill

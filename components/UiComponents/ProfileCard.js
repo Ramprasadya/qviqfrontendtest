@@ -830,13 +830,13 @@ const ProfileCard = (props) => {
                 className="py-[8px] pr-[12px] pl-[12px] rounded-[12px] w-[100%] flex flex-row  justify-between items-center bg-[#FAFAFA]"
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `https://${props.profile}.qviqfrontendtest.vercel.app`
+                    `https://${props.profile}.qviq.io`
                   );
                 }}
                 // bg-[#FAFAFA]
               >
                 <p className="text-[14px] font-[500]">
-                  {props.profile}.qviqfrontendtest.vercel.app
+                  {props.profile}.qviq.io
                 </p>
                 {isSmallScreen1 && (
                   <button
@@ -845,7 +845,7 @@ const ProfileCard = (props) => {
                       setShowtMessage(true);
                       setMessage("Copied");
                       navigator.clipboard.writeText(
-                        `https://${props.profile}.qviqfrontendtest.vercel.app`
+                        `https://${props.profile}.qviq.io`
                       );
                       setTimeout(() => {
                         setShowtMessage(false);
@@ -865,7 +865,7 @@ const ProfileCard = (props) => {
                     setShowtMessage(true);
                     setMessage("Copied");
                     navigator.clipboard.writeText(
-                      `https://${props.profile}.qviqfrontendtest.vercel.app`
+                      `https://${props.profile}.qviq.io`
                     );
                     setTimeout(() => {
                       setShowtMessage(false);

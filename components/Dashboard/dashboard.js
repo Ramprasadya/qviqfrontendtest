@@ -173,7 +173,7 @@ const Dashboard = ({
       //console.log(error?.response);
     }
   };
-  const sharelink = `Check out my profile on Qviq http://${profile}.qviqfrontendtest.vercel.app`;
+  const sharelink = `Check out my profile on Qviq http://${profile}.qviq.io`;
   const fetchreview = async () => {
     const config = {
       headers: {
@@ -1031,13 +1031,13 @@ const Dashboard = ({
                 </h2>
                 <div className="flex justify-between items-center h-fit break-all border border-[#1A1A1A] border-dotted rounded-lg px-1 [@media(min-width:300px)]:px-3 py-2.5 mb-6 md:mb-8">
                   <p className="text-xs font-medium">
-                    https://{profile}.qviqfrontendtest.vercel.app
+                    https://{profile}.qviq.io
                   </p>
                   <button
                     className="add-icon text-2xl active:scale-90 duration-150"
                     title="Copy URL"
                     onClick={() => {
-                      copyToClipboard(`https://${profile}.qviqfrontendtest.vercel.app`);
+                      copyToClipboard(`https://${profile}.qviq.io`);
                     }}
                   >
                     <HiOutlineDocumentDuplicate />

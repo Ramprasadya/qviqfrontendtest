@@ -9,7 +9,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 const DeviceTap = (props) => {
   const [output, setOutput] = useState("");
-  const url = `https://${props.username}.qviqfrontendtest.vercel.app`;
+  const url = `https://${props.username}.qviq.io`;
   useEffect(() => {
     const writeURLToNFC = async () => {
       const ndef = new window.NDEFReader();

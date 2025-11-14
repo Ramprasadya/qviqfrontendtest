@@ -20,7 +20,7 @@ const Profile1 = (props) => {
   }
   //function to generate VCard
   function generateVCard(name, mobile, email) {
-    const websiteURL = `https://${props.username}.qviqfrontendtest.vercel.app`;
+    const websiteURL = `https://${props.username}.qviq.io`;
     let vCard = `BEGIN:VCARD
       VERSION:3.0
       FN:${name}

@@ -39,7 +39,7 @@ const AddAffiliateLink = () => {
             redirectPage,
             trackingStatus:true,
         },config);
-        setDisplayLink(`https://qviqfrontendtest.vercel.app/${link}`);
+        setDisplayLink(`https://qviq.io/${link}`);
         setStatus(response.data.message);
         setTimeout(()=>setStatus(""),5000);
       }catch(e){

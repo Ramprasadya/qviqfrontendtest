@@ -58,7 +58,7 @@ export default function ButtonFunction5(props) {
     const name = props.name;
     const mobile = props.mobileNumber;
     const email = props.email;
-    const websiteURL = `https://${props.profile}.qviqfrontendtest.vercel.app`;
+    const websiteURL = `https://${props.profile}.qviq.io`;
 
     // if(navigator.platform == "Apple"){
     let vcard = [

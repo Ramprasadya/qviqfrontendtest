@@ -378,11 +378,11 @@ const CustomDomain = () => {
                 Your Qviq link will be : &nbsp;
               </span>
               <span className="font-medium" style={{ wordBreak: "break-all" }}>
-                https://{updateProfile}.qviqfrontendtest.vercel.app
+                https://{updateProfile}.qviq.io
               </span>
               <span
                 onClick={() => {
-                  copyToClipboard(`https://${updateProfile}.qviqfrontendtest.vercel.app`);
+                  copyToClipboard(`https://${updateProfile}.qviq.io`);
                 }}
                 className="text-xl ml-2 hover:cursor-pointer active:scale-90 duration-100"
                 title="Copy Link"
