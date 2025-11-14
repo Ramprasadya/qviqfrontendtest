@@ -570,7 +570,7 @@ const Home = ({ data, profile, type, switchData, toggleData }) => {
                       className="bg-white border border-[#E8E8E8] h-full w-full rounded-l-[12px] shadow-sm border-r-[#DFDBD8] border-r-[1px] flex flex-row justify-center items-center gap-[8px] cursor-pointer scale-[100%] active:scale-[95%]"
                       onClick={() => {
                         navigator.clipboard.writeText(
-                          `https://${profile}.qviq.io`
+                          `https://${profile}.qviqfrontendtest.vercel.app`
                         );
                       }}
                     >

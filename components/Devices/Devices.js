@@ -87,7 +87,7 @@ const Devices = (props) => {
   useEffect(()=>{
     const QRCodeStyling = require("qr-code-styling");
     const qrCode = new QRCodeStyling({
-      data: `https://qviq.io/devices/${userName}`,
+      data: `https://qviqfrontendtest.vercel.app/devices/${userName}`,
       width: 200,
       height: 200,
       dotsOptions: {
@@ -253,12 +253,12 @@ const Devices = (props) => {
                 </div>
                 <div className="copy_button">
                   <div className="text-[0.875rem] leading-[1.375rem] font-[400]">
-                    https://qviq.io/devices/{userName}
+                    https://qviqfrontendtest.vercel.app/devices/{userName}
                   </div>
                   <HiOutlineDocumentDuplicate
                     onClick={() =>
                       navigator.clipboard.writeText(
-                        `https://qviq.io/devices/${userName}`
+                        `https://qviqfrontendtest.vercel.app/devices/${userName}`
                       )
                     }
                     className="w-[1.25rem] h-[1.25rem] hover:cursor-pointer"

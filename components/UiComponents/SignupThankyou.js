@@ -1248,16 +1248,16 @@ export default function SignupThankyou({
               <div
                 className="w-full h-[56px] py-[8px] pr-[12px] pl-[12px] rounded-[12px] flex flex-row justify-between items-center bg-[#FAFAFA]"
                 onClick={() => {
-                  navigator.clipboard.writeText(`https://${username}.qviq.io`);
+                  navigator.clipboard.writeText(`https://${username}.qviqfrontendtest.vercel.app`);
                 }}
               >
-                <p className="text-[14px] font-[700]">{username}.qviq.io</p>
+                <p className="text-[14px] font-[700]">{username}.qviqfrontendtest.vercel.app</p>
 
                 <button
                   className="h-full w-fit rounded-[12px] py-[12px] pr-[24px] pl-[20px] flex flex-row items-center justify-center gap-[6px] text-white bg-black"
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      `https://${username}.qviq.io`
+                      `https://${username}.qviqfrontendtest.vercel.app`
                     );
                   }}
                 >

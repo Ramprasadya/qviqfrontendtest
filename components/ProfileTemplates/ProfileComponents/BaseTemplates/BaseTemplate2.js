@@ -1526,13 +1526,13 @@ const BaseTemplate2 = (props) => {
                         } px-1 [@media(min-width:300px)]:px-3 py-2.5 mb-6 md:mb-8`}
                       >
                         <p className="text-[12px] font-medium">
-                          https://{username}.qviq.io?goto={shareSpecific}
+                          https://{username}.qviqfrontendtest.vercel.app?goto={shareSpecific}
                         </p>
                         <button
                           className="font-bold text-[14px] underline active:scale-90 duration-200"
                           onClick={() => {
                             navigator.clipboard.writeText(
-                              `https://${username}.qviq.io?goto=${shareSpecific}`
+                              `https://${username}.qviqfrontendtest.vercel.app?goto=${shareSpecific}`
                             );
                           }}
                         >

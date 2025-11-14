@@ -29,11 +29,11 @@ export async function generateMetadata({ params }, parent) {
 
           const fullProfileImageUrl = new URL(
             profileImage,
-            `https://${params.subdomain}.qviq.io`
+            `https://${params.subdomain}.qviqfrontendtest.vercel.app`
           ).toString();
 
           return {
-            metadataBase: new URL(`https://${params.subdomain}.qviq.io`),
+            metadataBase: new URL(`https://${params.subdomain}.qviqfrontendtest.vercel.app`),
              icons: {
               icon: [
                 { url: profileImage, sizes: "any" },

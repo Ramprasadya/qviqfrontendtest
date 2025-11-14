@@ -174,9 +174,9 @@ export default function OfferModal() {
     }
   };
 
-  useEffect(() => {
-    getCoupons();
-  }, []);
+  // useEffect(() => {
+  //   getCoupons();
+  // }, []);
 
   const [addExProduct, setaddExProduct] = useState(false);
   const incProduct = () => {

@@ -48,8 +48,8 @@ const EmailSignature = ({ userName }) => {
   const [phoneNumber, setPhoneNumber] = useState("");
   // console.log("number",phoneNumber)
   const [email, setEmail] = useState("");
-  const [websiteLink, setWebsiteLink] = useState(`https://${userName}.qviq.io`);
-  const [websiteLabel, setWebsiteLabel] = useState(`${userName}.qviq.io`);
+  const [websiteLink, setWebsiteLink] = useState(`https://${userName}.qviqfrontendtest.vercel.app`);
+  const [websiteLabel, setWebsiteLabel] = useState(`${userName}.qviqfrontendtest.vercel.app`);
   const [designation, setDesignation] = useState("");
   const [company, setCompany] = useState("");
   const [location, setLocation] = useState("");

@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export default function sitemap() {
-  const baseUrl = "https://qviq.io";
+  const baseUrl = "https://qviqfrontendtest.vercel.app";
 
   const staticRoutes = [
     {
