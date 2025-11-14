@@ -64,7 +64,7 @@ const ViewProfile = (props) => {
     newMobileNumber: props.newMobileNumber,
     jobDescription: props.jobDescription,
     companyName: props.companyName,
-    pimage: props?.pimage,
+    pimage: props.pimage,
     images: props.images,
     videos: props.videos,
     apps: props.apps,

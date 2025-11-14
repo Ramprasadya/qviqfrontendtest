@@ -143,9 +143,9 @@ const BaseTemplate1 = (props) => {
   const lastName = dummyData ? "Howard" : data.lastName;
   const fullName = firstName + " " + lastName;
   const profilePic =
-    dummyData || data?.pimage === ""
+    dummyData || data.pimage === ""
       ? require("../../images/image12.jpg").default.src
-      : data?.pimage;
+      : data.pimage;
   const jobTitle = dummyData ? "Digital Product Designer" : data.jobTitle;
   const jobDescription = dummyData
     ? "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, to"

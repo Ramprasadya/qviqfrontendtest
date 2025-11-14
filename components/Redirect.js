@@ -144,7 +144,7 @@ const RedirectPage = ({ data, searchParams }) => {
           mobileVisibility={data.mobileVisibility}
           jobDescription={data.description}
           companyName={data.companyName}
-          pimage={data?.pimage}
+          pimage={data.pimage}
           images={data.images}
           videos={data.videos}
           apps={data.apps}
