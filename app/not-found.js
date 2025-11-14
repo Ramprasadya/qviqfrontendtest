@@ -6,7 +6,7 @@ export const metadata = {
 export default function Error() {
   return (
     <>
-      <Error404 />
+      {/* <Error404 /> */}
     </>
   );
 }
