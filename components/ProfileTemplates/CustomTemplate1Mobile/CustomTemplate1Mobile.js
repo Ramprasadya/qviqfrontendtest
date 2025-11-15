@@ -162,7 +162,7 @@ const CustomTemplate1Mobile = (props) => {
   };
 
   const calculateLuminance = (hex) => {
-  const c = hex.substring(1); 
+  const c = hex?.substring(1); 
   const rgb = parseInt(c, 16);
   const r = (rgb >> 16) & 0xff;
   const g = (rgb >> 8) & 0xff;

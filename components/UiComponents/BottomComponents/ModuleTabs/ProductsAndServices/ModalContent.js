@@ -477,7 +477,7 @@ function ModalContent(props) {
                   </div>
                 )}
 
-                <div className="flex flex-row gap-[10px] mt-[20px]">
+                <div className="flex overflow-scroll flex-row gap-[10px] mt-[20px]">
                   <div
                     className={`flex flex-row items-center gap-[10px] py-[10px] pl-[15px] pr-[20px] rounded-full ${
                       buttonType === "whatsapp" && "bg-[#FAFAFA]"
