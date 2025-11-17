@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
         <UserContextProvider>
           {/* <div className="flex h-screen w-full"> */}
             <div className="w-full overflow-y-auto" id="hidescroll">
-              Hello world
+              {children}
             </div>
             <OfferModal />
             <CookieModal />

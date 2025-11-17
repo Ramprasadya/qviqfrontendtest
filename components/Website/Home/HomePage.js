@@ -4,21 +4,15 @@ import Navbar from "../header/Navbar";
 import PrimaryButton3 from "../../UiComponents/PrimaryButton3";
 import logo from "../../Images/tapopLogo.png";
 import {
-  HiArrowUpRight,
-  HiCheck,
   HiChevronDown,
-  HiChevronLeft,
-  HiChevronRight,
   HiChevronUp,
 } from "react-icons/hi2";
-import { HiOutlineArrowSmRight, HiOutlinePlusCircle } from "react-icons/hi";
-import PrimaryButton2 from "../../UiComponents/PrimaryButton2";
+
 import Footer from "../Footer";
 import { useContext } from "react";
 import { UserContext } from "../../Contexts/context";
 import Carousel from "../../UiComponents/Carousel";
 import Carousel2 from "../../UiComponents/Carousel2";
-import Feature from "./Feature";
 import InfiniteSlider from "./InfiniteSlider";
 import "../../UiComponents/iconTextStyle.css";
 import SecondaryButton from "../../UiComponents/SecondaryButton";
