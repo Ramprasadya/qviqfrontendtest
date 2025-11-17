@@ -735,7 +735,7 @@ const CustomBase1Mobile = (props) => {
       setgoogleReviewOpen(true);
     }
   }, [props.qrGoogle, dummyData, disable]);
-  console.log(props.customTextColor);
+  // console.log(props.customTextColor);
 
   return (
     <div
