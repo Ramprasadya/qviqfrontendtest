@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "https://www.ramprasad.site/:path*",
+      "destination": "https://ramprasad.site/:path*",
+      "permanent": true
+    }
+  ]
+}
