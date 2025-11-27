@@ -10,7 +10,7 @@
 //  export const hostname = "localhost:3000";
 
 
-// for test Deployment on Vercel purpose
+// for test Deployment on Vercel purpose using my domain
 export const serverUrl = "https://qviqbackend.onrender.com";
 export const clientUrl = "https://ramprasad.site";
 export const hostname = "ramprasad.site";
