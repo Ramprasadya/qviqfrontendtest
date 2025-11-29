@@ -12,5 +12,5 @@
 
 // for test Deployment on Vercel purpose using my domain
 export const serverUrl = "https://qviqbackend.onrender.com";
-export const clientUrl = "https://ramprasad.site";
-export const hostname = "ramprasad.site";
+export const clientUrl = "https://qviq.io";
+export const hostname = "qviq.io";
